@@ -131,7 +131,21 @@ def time_stats(df):
 
     # TO DO: display the most common day of week
     popular_day = df['day_of_week'].mode()[0]
-    print('the most common day of week: ',popular_day) 
+    if popular_day==1:
+        comon_day='sunday'
+    elif popular_day==2:
+        comon_day='monday'
+    elif popular_day==4:
+        comon_day='tuesday'
+    elif popular_day==4:
+        comon_day='wednesday'
+    elif popular_day==5:
+        comon_day='thursday'
+    elif popular_day==6:
+        comon_day='friday'
+    elif popular_day==7:
+        comon_day='saturday'
+    print('the most common day of week: ',comon_day)
 
 
     # TO DO: display the most common start hour
