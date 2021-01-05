@@ -241,13 +241,13 @@ def main():
         
         # display raw data upon request by the user 
         start=0
-        view_data=input('\n would you like to see raw data?Enter yes or no.\n').lower()
+        view_data=input('\n would you like to see raw data?Enter y or n.\n').lower()
         while True:
 
-            if view_data=='yes':
+            if view_data=='y':
                 print(df.iloc[start:start+5])
                 start +=5
-                view_data=input('\n would you like to see more raw data?Enter yes or no.\n').lower()
+                view_data=input('\n would you like to see more raw data?Enter y or n.\n').lower()
                 continue
             else:
                 break
